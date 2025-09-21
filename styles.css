@@ -31,8 +31,7 @@ header {
 }
 
 section {
-    margin-top: 100px;
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,3 +61,27 @@ article {
     background-color: blue;
     
 }
+
+footer {
+    display: flex;
+    height: 450px;
+    background-color: #0891B2;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+footer > div {
+    margin-left: 50px;
+}
+
+footer > div > h4 {
+    font-size: 30px;
+    color: white;
+}
+
+footer > div > p, footer > div > div > p {
+    font-size: 20px;
+    color: white;
+}
+
