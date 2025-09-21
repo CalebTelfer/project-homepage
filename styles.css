@@ -29,3 +29,36 @@ header {
     align-items: center;
     padding-top: 50px;
 }
+
+section {
+    margin-top: 100px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+section > div {
+    display: flex;
+    gap: 50px;
+}
+
+.titleDiv {
+    width: 1150px;
+    margin: -50px;
+}
+
+h2 {
+    text-align: left;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    background-color: blue;
+    
+}
