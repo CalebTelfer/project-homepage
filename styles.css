@@ -64,6 +64,33 @@ section > div {
     gap: 50px;
 }
 
+.projectPlaceHolder {
+    background-color: yellow;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red { background-color: #9E1C1C; }
+.purple { background-color: #7C75CA; }
+.green { background-color: #5E8F4D; }
+.pink { background-color: #C363B4; }
+.orange { background-color: #D88F39; }
+.blue { background-color: #4BA2D2; }
+
+.projectPlaceHolder > p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.projectInfo {
+    height: 150px;
+    background-color: white;
+    box-shadow: 0 0 8px 2px rgba(128, 128, 128, 0.3);
+}
+
 .titleDiv {
     width: 1150px;
     margin: -50px;
@@ -78,8 +105,6 @@ article {
     flex-direction: column;
     height: 400px;
     width: 350px;
-    background-color: blue;
-    
 }
 
 footer {
