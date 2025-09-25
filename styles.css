@@ -2,8 +2,15 @@
     font-family: 'Roboto', sans-serif;
   }
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     height: 500px;
+    min-height: 10vh;
+    width: 100vw;
     position: relative;
     overflow: visible;
 }
@@ -11,8 +18,10 @@ header {
 .clippedHead {
     position: absolute;
     inset: 0;
+    width: 100vw;
     background-color: #0891B2;
     height: 500px;
+    min-height: 10vh;
     clip-path: polygon(0 0, 100% 0, 100% 40%, 0% 100%);
     z-index: -1;
 
@@ -20,8 +29,8 @@ header {
 
 .aboutMeContainer {
     padding: 25px;
-    height: 360px;
     width: 720px;
+    max-width: 60vw;
     background-color: white;
     z-index: 1;
     box-shadow: 0 0 8px 2px rgba(128, 128, 128, 0.3);
@@ -32,6 +41,10 @@ header {
     justify-content: right;
     gap: 15px;
     margin-right: 15px;
+}
+
+.aboutMeContainer > p , h1 {
+    font-size: 1rem;
 }
 
 .socials {
@@ -51,8 +64,8 @@ header {
 }
 
 section {
-    height: 1000px;
     display: flex;
+    padding: 4rem;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -60,13 +73,14 @@ section {
 }
 
 section > div {
+    max-width: 1200px;
     display: flex;
     gap: 50px;
 }
 
 .projectPlaceHolder {
     background-color: yellow;
-    height: 300px;
+    padding: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +100,6 @@ section > div {
 }
 
 .projectInfo {
-    height: 150px;
     background-color: white;
     box-shadow: 0 0 8px 2px rgba(128, 128, 128, 0.3);
 
@@ -113,24 +126,19 @@ section > div {
 }
 
 .titleDiv {
-    width: 1150px;
-    margin: -50px;
-}
-
-h2 {
-    text-align: left;
+    width: 100%;
 }
 
 article {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 350px;
+    max-width: 350px;
 }
 
 footer {
     display: flex;
     height: 450px;
+    width: 100vw;
     background-color: #0891B2;
     justify-content: center;
     align-items: center;
@@ -138,6 +146,8 @@ footer {
 }
 
 footer > div {
+    padding: 0;
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -163,3 +173,17 @@ footer > div > p, footer > div > div > p {
     align-items: center;
     gap: 10px;
 }
+
+
+
+@media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 8px;
+    }
+  }
