@@ -61,18 +61,23 @@ header {
 }
 
 section {
-    display: flex;
-    padding: 4rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
+    padding: 0 calc(3rem + 15vw);
 }
 
-section > div {
+section > h2 {
+
     max-width: 1200px;
-    display: flex;
-    gap: 50px;
+    margin: auto;
+}
+
+
+.grid-cards {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem;
+    margin: auto;
 }
 
 .projectPlaceHolder {
@@ -93,7 +98,7 @@ section > div {
 .projectPlaceHolder > p {
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .projectInfo {
@@ -115,11 +120,11 @@ section > div {
 
 .projectInfo > div > div {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .projectInfo > p {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .titleDiv {
@@ -139,7 +144,7 @@ footer {
     background-color: #0891B2;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 4rem;
 }
 
 footer > div {
@@ -147,7 +152,7 @@ footer > div {
     
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
 }
 
 footer > div > * {
@@ -156,17 +161,17 @@ footer > div > * {
 }
 
 footer > div > h4 {
-    font-size: 30px;
+    font-size: 2rem;
     color: white;
 }
 
 footer > div > p, footer > div > div > p {
-    font-size: 20px;
+    font-size: 1.5rem;
     color: white;
 }
 
 .flex {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
