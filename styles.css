@@ -60,8 +60,16 @@ header {
     padding: calc(3rem + 0.5vw);
 }
 
+.bigscreenMe {
+    max-width: 28rem;
+}
+
+.smallscreenMe {
+    display: none;
+}
+
 section {
-    padding: 0 calc(3rem + 15vw);
+    padding: 0 calc(3rem + 4vw);
 }
 
 section > h2 {
@@ -72,7 +80,7 @@ section > h2 {
 .grid-cards {
     display: grid;
     max-width: calc(3 * 350px + 2 * 2rem);
-    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
     justify-content: center;
     gap: 2rem;
     padding: 3rem;
@@ -186,5 +194,27 @@ footer > div > p, footer > div > div > p {
     footer {
         flex-direction: column;
         padding: 5rem 0;
+    }
+}
+
+@media (max-width: 1256px) {
+    .aboutMeContainer {
+        margin: 10rem auto;
+        max-width: 60vw;
+    }
+
+    .smallscreenMe {
+        display: block;
+        float: left;
+        margin-top: -10rem;
+        margin-left: -5rem;
+        max-width: 35vw;
+        height: auto;
+        z-index: 55;
+        padding: .5rem;
+    }
+
+    .bigscreenMe {
+        display: none;
     }
 }
