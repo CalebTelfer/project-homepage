@@ -74,6 +74,7 @@ section {
 
 section > h2 {
     margin: auto;
+    max-width: calc(3 * 350px + 2 * 2rem);
 }
 
 
@@ -216,5 +217,27 @@ footer > div > p, footer > div > div > p {
 
     .bigscreenMe {
         display: none;
+    }
+}
+
+@media (max-width: 895px) {
+    .bigscreenMe {
+        display: block;
+        max-width: 80vw;
+    }
+
+    .smallscreenMe {
+        display: none;
+    }
+
+    .headerFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .aboutMeContainer {
+        margin: auto;
     }
 }
